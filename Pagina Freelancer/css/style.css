@@ -1,6 +1,7 @@
 /* SeudoSelectore */
 :root{
     --blanco: #ffffff;
+    --negro: #141414;
     --primario: #041840;
     --secundario: #F2075D;
     --terciario: #1C2840;
@@ -11,17 +12,19 @@
 html{
     font-size: 62.5%;
 }
-body{
-    font-size: 16px;
-}
 
-header{
-    background-color: #7c7cff;
+body{
+    font-size: 16px; /* 1rem = 10px */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
 }
 
 .titulo {
     text-align: center; 
-    font-size: 3.8rem;   
+    font-size: 3rem;   
+    color: var(--primario);    
+    font-family: 'Yusei Magic', sans-serif;   
+    margin: 0.5rem auto 0.5rem auto;         
 }
 
 /* 
@@ -36,20 +39,27 @@ h1 span {
 }
 */
 
-.titulo span{
-    font-size: 2rem;
-    color: hsl(hue, saturation, lightness);
-} 
-
-
-nav{
-    background-color: #1fafb4;
-    text-align: center;
-    padding: 0rem;
+.contenedor{
+    width: 120rem;
+    margin: 0rem auto;
+    padding: 0.5rem 0rem 0.5rem 0rem;  
+    
 }
-
-a{
-    color: aliceblue;
-    padding: 2rem;
+.nav-bg{
+    background-color: var(--primario);    
+}
+.nav-principal{
+    
+}
+.nav-principal a {
+    color: var(--blanco);   
+    padding: 0rem 10rem; 
+    font-weight: 600;
+    text-decoration: none;
+}
+.nav-principal a:hover {    
+    color: var(--primario);    
+    background-color: var(--cuarto);    
+    border-color: var(--secundario);
     
 }
