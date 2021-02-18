@@ -22,14 +22,19 @@ body{
     font-size: 16px; /* 1rem = 10px */
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
+    background-color: var(--terciario);
+}
+header{
+    background-color: var(--blanco);
 }
 
 .titulo {
+    background-color: var(--blanco);
     text-align: center;  
-    font-size: 3rem;          
-    color: var(--primario);    
+    font-size: 3rem;              
     font-family: 'Yusei Magic', sans-serif;   
-    margin: 0.5rem auto 0.5rem auto;         
+    padding: 0.5rem auto 0.5rem auto;      
+    margin: 0;   
 }
 
 /* 
