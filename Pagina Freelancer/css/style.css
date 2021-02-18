@@ -11,6 +11,11 @@
 /* La etiqueta html y body con esas propiedades hace que el valor de rem sea el siguiente 10px = 1rem*/
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
 }
 
 body{
@@ -79,4 +84,18 @@ h1 span {
     }    
 }
 
+.hero {
+    background-image: url(../image/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    height: 45rem; 
+    padding: 2rem;
+    position: relative;
+}
+.contenido-hero{
+    position: absolute;
+    background-color: #05DBF2;
+    width: 5rem;
+    height: 5rem;
+}
 
