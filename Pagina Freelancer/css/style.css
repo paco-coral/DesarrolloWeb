@@ -32,11 +32,16 @@ header{
 }
 
 .sombra {
-    -webkit-box-shadow: 7px 7px 0px 0px rgba(99,194,180,1);
-    -moz-box-shadow: 7px 7px 0px 0px rgba(99,194,180,1);
-    box-shadow: 7px 7px 0px 0px rgba(99,194,180,1);
+    -webkit-box-shadow: 5px 5px 0px 0px rgb(5, 219, 242);
+    -moz-box-shadow: 5px 5px 0px 0px rgb(5, 219, 242);
+    box-shadow: 5px 5px 0px 0px rgb(5, 219, 242);
 }
 
+.sombra:hover {
+    -webkit-box-shadow: 5px 5px 0px 0px var(--secundario);
+    -moz-box-shadow: 5px 5px 0px 0px var(--secundario);
+    box-shadow: 5px 5px 0px 0px var(--secundario);
+}
 /*Titulo de Top*/
 .titulo {
     /*background-color: var(--blanco);*/
@@ -138,18 +143,22 @@ h1 span {
 /*-----Color para todos los contenidos------*/
 .color-contenido{    
     /*background-image: linear-gradient(to top, var(--terciario) 0%, var(--primario) 100%);*/
-    
+    background-color: var(--primario);
+    margin: 3rem 7%;    
+    border-radius: 1rem;
+    border-color: var(--quinto);
+    padding: 2rem;        
 }
 /*--------------------------------------------*/
 
 /*-----Contenedor de Servicios------*/
-.servicios{
+/*.servicios{
     background-color: var(--primario);
     margin: 2rem 10rem;    
     border-radius: 1rem;
     border-color: var(--quinto);
     padding: 2rem;    
-}
+}*/
 .titulo-servicios{
     margin: 4rem;
     text-align: center;
@@ -185,12 +194,35 @@ h1 span {
 .contenido-servicios section:hover p{
     color: var(--primario);
 }
-
-
-
-
-
 /*--------------------------------------------*/
+
+/*-----Formulario------*/
+
+.formulario{
+    text-align: center;
+    margin: 3rem;
+    color: var(--blanco);
+}
+
+fieldset{
+    border-radius: 1rem;    
+}
+
+legend{
+    padding: 3rem;
+}
+
+.opcion{
+    padding: 0.5rem;
+}
+/*---------------------*/
+
+/*-----Footer------*/
+.footer{
+    text-align: center;
+    margin: 3rem;
+}
+/*------------------*/
 
 /*-----Codigo para dispositivos responsives------*/
 
