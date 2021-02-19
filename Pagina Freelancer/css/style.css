@@ -4,7 +4,7 @@
     --negro: #141414;
     --primario: #041840;
     --secundario: #F2075D;
-    --terciario: #1C2840;
+    --terciario: rgb(17, 18, 19);
     --cuarto: #05DBF2;
     --quinto: #BF9663;
 }
@@ -22,19 +22,29 @@ body{
     font-size: 16px; /* 1rem = 10px */
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    background-color: var(--terciario);
+    display: flex;
+    flex-direction: column;
+    /*background-image: linear-gradient(to top, var(--terciario) 0%, var(--primario) 100%);
+    background-color: var(--primario);*/
 }
 header{
     background-color: var(--blanco);
 }
 
+.sombra {
+    -webkit-box-shadow: 7px 7px 0px 0px rgba(99,194,180,1);
+    -moz-box-shadow: 7px 7px 0px 0px rgba(99,194,180,1);
+    box-shadow: 7px 7px 0px 0px rgba(99,194,180,1);
+}
+
+/*Titulo de Top*/
 .titulo {
-    background-color: var(--blanco);
+    /*background-color: var(--blanco);*/
     text-align: center;  
     font-size: 3rem;              
     font-family: 'Yusei Magic', sans-serif;   
-    padding: 0.5rem auto 0.5rem auto;      
-    margin: 0;   
+    margin: 0.5rem auto 0.5rem auto;      
+    /*margin: 0;   */
 }
 
 /* 
@@ -43,7 +53,7 @@ span {
     #Codigo
 }
 
-Este estilo se realiza unicamente a los span que estan dentro de una etiqueta <h1><|h1>
+Este estilo se realiza unicamente a los span que estan dentro de una etiqueta <h1><|h1> 
 h1 span {
     #Codigo
 }
@@ -75,13 +85,14 @@ h1 span {
     background-color: var(--cuarto);            
 }
 
-
+/*-----Contenido Hero para la web------*/
 .hero {
     background-image: url(../image/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;   
     height: 45rem; 
     position: relative;
+    
 }
 .contenido-hero{
     position: absolute;
@@ -91,10 +102,8 @@ h1 span {
     display: flex;    
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;       
 }
-
-
 .contenido-hero h2, p {
     color: var(--blanco);    
 }
@@ -109,7 +118,6 @@ h1 span {
     padding-left: 20%;
     padding-right: 20%;
 }
-
 .boton{
     background-color: var(--secundario);
     color: var(--blanco);
@@ -125,10 +133,66 @@ h1 span {
     background-color: var(--cuarto);
     color: var(--primario);
 }
+/*--------------------------------------------*/
+
+/*-----Color para todos los contenidos------*/
+.color-contenido{    
+    /*background-image: linear-gradient(to top, var(--terciario) 0%, var(--primario) 100%);*/
+    
+}
+/*--------------------------------------------*/
+
+/*-----Contenedor de Servicios------*/
+.servicios{
+    background-color: var(--primario);
+    margin: 2rem 10rem;    
+    border-radius: 1rem;
+    border-color: var(--quinto);
+    padding: 2rem;    
+}
+.titulo-servicios{
+    margin: 4rem;
+    text-align: center;
+    color: var(--quinto);
+    font-weight: 700;
+}
+.contenido-servicios {
+    display: flex;   
+}
+.contenido-servicios section{
+    margin: 1rem;    
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--secundario); 
+    text-align: center; 
+    font-weight: 300;  
+}
+
+.contenido-servicios section h3{
+    color: var(--blanco);
+}
+
+.contenido-servicios section:hover{
+    margin: 1rem;    
+    border-radius: 1rem;
+    background-color: var(--cuarto);
+}
+
+.contenido-servicios section:hover h3{
+    color: var(--primario);
+}
+
+.contenido-servicios section:hover p{
+    color: var(--primario);
+}
 
 
 
-/*Codigo para dispositivos responsivos*/
+
+
+/*--------------------------------------------*/
+
+/*-----Codigo para dispositivos responsives------*/
 
 @media ( max-width:700px ) {
 
@@ -143,3 +207,5 @@ h1 span {
         padding: 1rem 10rem;
     }    
 }
+
+/*--------------------------------------------*/
