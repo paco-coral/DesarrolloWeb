@@ -133,10 +133,12 @@ h1 span {
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 0.5rem;    
+    border: none;
 }
 .boton:hover{
     background-color: var(--cuarto);
     color: var(--primario);
+    cursor: pointer;
 }
 /*--------------------------------------------*/
 
@@ -271,7 +273,8 @@ h1 span {
 }
 .campo{
     margin-bottom: 1rem; 
-    padding: 0rem 1rem;   
+    padding: 0rem 1rem; 
+    
 }
 .campo label{
     color: var(--negro);
@@ -279,10 +282,17 @@ h1 span {
     margin-bottom: 1rem;
     display: block;
 }
-.input-text{
-    
+.input-text{    
     width: 100%;
-    
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;    
+}
+.campo textarea{
+    height: 15rem;    
+}
+.enviar .boton{
+    width: 50%;
 }
 /*---------------------*/
 
