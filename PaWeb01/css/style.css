@@ -1,0 +1,40 @@
+:root{
+    --blanco: #fff;
+    --negro: #141414;    
+    --primario: #00A156;
+    --secundario: #FFD000;
+    --terciario: #FB3301;    
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;    
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Noto Sans SC', sans-serif;        
+}
+.nav{
+    background-color: var(--primario); 
+    display: flex;          
+    flex-direction: row;
+}
+.correo{
+    display: flex;   
+    text-align: center;
+    margin: 0 10rem;    
+    color: var(--blanco);
+}
+.correo i{
+    padding: 1.4rem;
+    
+}
+.acceso a {
+    background-color: var(--secundario);
+    border-radius:  10rem;
+    text-decoration: none;
+    color: var(--negro);
+    margin-left: 2rem;    
+}

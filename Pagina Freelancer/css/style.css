@@ -12,6 +12,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
 
 *, *::before, *::after{
@@ -258,9 +259,6 @@ h1 span {
       margin-bottom: 2rem;
 }
 
-.contenedor-campos{
-
-}
 .dos-campos{
     display: flex;
     justify-content: space-around;   
