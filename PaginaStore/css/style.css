@@ -1,10 +1,13 @@
 :root{
-    --white: #fff;
+    --white: #ffffff;
     --dark: #262626;
-    --primary: #9CC1D9;
-    --secondary: #025930;
-    --tertiary: #1CA666;
-    --quaternary: #F2CF63; 
+    --primary: #004A43;
+    --secondary: #58D1BD;
+    --tertiary: #FFAD3D;
+    --quaternary: #7D77FC; 
+    --aditional-1: #f1f6f6;
+    --aditional-2: #65b7d5;
+    --aditional-3: #e979b4;
 
     /*Fuente Principal*/
     --fontPrimary: 'Open Sans', sans-serif; 
@@ -21,7 +24,7 @@ html {
 
 /*----- Start Globales -------*/
 body {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     font-size: 1.6rem;
     line-height: 1.5;    
 }
@@ -54,6 +57,18 @@ h2{font-size: 3.2rem;}
 h3{font-size: 2.4rem;}
 
 /*----- End Globales -------*/
+
+/*----- Start Logotipo ------*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+/*----- End Logotipo ------*/
+
+/*----- Start Logotipo ------*/
+/*----- End Logotipo ------*/
 
 
   
